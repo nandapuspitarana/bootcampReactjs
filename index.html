@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <title>Todo List</title>
   <!--build:css css/styles.min.css-->
@@ -20,10 +23,10 @@
   <header id="background">
     <section class="container">
         <div class="row vh-100">
-          <div class="bio col-12">
+          <div class="box col-12">
             <h1 id="time">12:58</h1>
-            <h3 id="salam">Halo, Nanda</h3>
-            <p id="today">Hari ini :</p>
+            <h3 class="greating"><span id="salam">Good morning</span>, <span id="nama">Nanda</span></h3>
+            <p id="today">TODAY</p>
             <!-- alert -->
             <div id="list">
               <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -34,12 +37,12 @@
               </div>
             </div>
             <!-- end alert -->
-            <form class="input-group mb-3 col-md-5 m-auto" id="formSubmit" action="">
-              <input id="isi" type="text" class="form-control" placeholder="Masukan Catatan">
-              <div class="input-group-append">
-                <button id="tombol" class="btn btn-success" type="button" id="button-addon2">Masukan</button>
-              </div>
+            <form class="input-group mb-3 col-md-9 m-auto" id="formSubmit" action="">
+              <input id="isi" type="text" class="form-control-custom" placeholder="Masukan Catatan" required>
+              <button id="tombol" class="float" type="submit" id="button-addon2"><i class="fa fa-plus my-float"></i></button>
             </form>
+            <div class="input-group-append">
+            </div>
           </div>
         </div>
     </section>

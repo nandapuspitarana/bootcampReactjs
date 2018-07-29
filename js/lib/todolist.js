@@ -30,13 +30,13 @@ const fungsiTodo = function(){
     // menambahkan data yg disimpan
     // listDom.innerHTML = listDom.innerHTML + listHTML + data + listHTML2
     // 02 push data
-    data.push(tambah);
-    // nampilin data onclick
-    render();
-    // 03 upload ke local storage
-    localStorage.setItem('isiData', JSON.stringify(data))
-    // input valuenya harus kosong
-    isiDom.value = "" 
+        data.push(tambah);
+        // nampilin data onclick
+        render();
+        // 03 upload ke local storage
+        localStorage.setItem('isiData', JSON.stringify(data))
+        // input valuenya harus kosong
+        isiDom.value = ""
 }
 
 // 05 bikin fungsi buat looping data untuk dikeuarkan
@@ -54,8 +54,6 @@ function render(){
 // 06 buat masukin looping
 render()
 
-    // jika diklik
-    tombolDom.addEventListener('click', fungsiTodo)
     // jika disubmit
     formSubmit.addEventListener('submit', fungsiTodo)
 
